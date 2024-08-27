@@ -1,10 +1,8 @@
 package com.getlivreru.book_network.user;
 
+import com.getlivreru.book_network.role.Role;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -17,9 +15,11 @@ import java.time.LocalDate;
 import java.util.Collection;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
+@Builder
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -40,6 +40,7 @@ public class User implements UserDetails, Principal {
     private boolean accountLocked;
     private boolean enabled;
 
+    private List<Role> roles;
 
     @CreatedDate
     @Column(nullable = false, updatable = false)
