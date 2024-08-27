@@ -1,6 +1,7 @@
 package com.getlivreru.book_network.role;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.getlivreru.book_network.user.User;
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,7 +29,9 @@ public class Role {
     private Integer id;
     @Column(unique = true)
     private String name;
+
     @ManyToMany(mappedBy = "roles")
+    @JsonIgnore
     private List<User> users;
 
     @CreatedDate
