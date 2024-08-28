@@ -1,5 +1,6 @@
 package com.getlivreru.book_network.security;
 
+import com.getlivreru.book_network.security.JwtFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
