@@ -6,7 +6,10 @@ import com.getlivreru.book_network.user.TokenRepository;
 import com.getlivreru.book_network.user.UserRepository;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
+
+@Service
 public class AuthenticationService {
 
     private final UserRepository userRepository;
