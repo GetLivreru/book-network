@@ -1,5 +1,6 @@
 package com.getlivreru.book_network.auth;
 
+import com.getlivreru.book_network.email.EmailService;
 import com.getlivreru.book_network.role.RoleRepository;
 import com.getlivreru.book_network.security.JwtService;
 import com.getlivreru.book_network.user.TokenRepository;
