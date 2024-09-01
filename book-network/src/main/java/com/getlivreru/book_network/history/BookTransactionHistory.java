@@ -1,9 +1,9 @@
 package com.getlivreru.book_network.history;
 
 import com.getlivreru.book_network.book.Book;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import com.getlivreru.book_network.common.BaseEntity;
+import com.getlivreru.book_network.user.User;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

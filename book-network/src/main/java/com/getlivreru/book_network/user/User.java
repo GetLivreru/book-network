@@ -1,9 +1,10 @@
 package com.getlivreru.book_network.user;
 
+import com.getlivreru.book_network.history.BookTransactionHistory;
 import com.getlivreru.book_network.role.Role;
+import com.getlivreru.book_network.book.Book;
 import jakarta.persistence.*;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -11,7 +12,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.awt.print.Book;
+
 import java.security.Principal;
 import java.time.LocalDate;
 import java.util.Collection;
@@ -25,7 +26,6 @@ import static jakarta.persistence.FetchType.EAGER;
 @Getter
 @Setter
 @Builder
-@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
