@@ -4,8 +4,27 @@ spring:
   servlet:
     multipart:
       max-file-size: 50MB
+  log:
+    level:
+      root: DEBUG
+      org.springframework.web: DEBUG
+      org.hibernate: INFO
+      com.getlivreru.book_network: DEBUG  # Замените com.yourpackage на ваш пакет
 springdoc:
   default-produces-media-type: application/json
 server:
   servlet:
     context-path: /api/v1/
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.hibernate: INFO
+    com.getlivreru.book_network: DEBUG  # Замените com.yourpackage на ваш пакет
+  file:
+    name: logs/app.log  # Путь к файлу логов
+  pattern:
+    console:
+      debug: true
+    file:
+      max-size: 10MB
+      max-history: 30
