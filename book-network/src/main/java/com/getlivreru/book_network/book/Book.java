@@ -1,6 +1,7 @@
 package com.getlivreru.book_network.book;
 
 import com.getlivreru.book_network.common.BaseEntity;
+import com.getlivreru.book_network.feedback.Feedback;
 import com.getlivreru.book_network.history.BookTransactionHistory;
 import com.getlivreru.book_network.user.User;
 import jakarta.persistence.Entity;
