@@ -1,8 +1,13 @@
 package com.getlivreru.book_network.book;
 
+import com.getlivreru.book_network.common.BaseEntity;
 import com.getlivreru.book_network.history.BookTransactionHistory;
 import com.getlivreru.book_network.user.User;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,12 +22,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Book {
+public class Book extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // Use AUTO, IDENTITY, SEQUENCE, or TABLE depending on your DB
-    private Long id;  // Primary key
-
+    private Integer id;
     private String title;
     private String authorName;
     private String isbn;
@@ -34,7 +36,22 @@ public class Book {
     @JoinColumn(name = "owner_id")
     private User owner;
     @OneToMany(mappedBy = "book")
+    private List<Feedback> feedbacks;
+    @OneToMany(mappedBy = "book")
     private List<BookTransactionHistory> histories;
 
+    @Transient
+    public double getRate() {
+        if (feedbacks == null || feedbacks.isEmpty()) {
+            return 0.0;
+        }
+        var rate = this.feedbacks.stream()
+                .mapToDouble(Feedback::getNote)
+                .average()
+                .orElse(0.0);
+        double roundedRate = Math.round(rate * 10.0) / 10.0;
 
+        // Return 4.0 if roundedRate is less than 4.5, otherwise return 4.5
+        return roundedRate;
+    }
 }
