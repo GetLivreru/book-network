@@ -1,0 +1,148 @@
+2024-09-08T21:10:05.401+05:00  INFO 5864 --- [main] c.g.book_network.BookNetworkApplication  : Starting BookNetworkApplication using Java 17.0.10 with PID 5864 (C:\Users\Victus\Desktop\111\book-network\book-network\target\classes started by Victus in C:\Users\Victus\Desktop\111\book-network\book-network)
+2024-09-08T21:10:05.404+05:00 DEBUG 5864 --- [main] c.g.book_network.BookNetworkApplication  : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-08T21:10:05.406+05:00  INFO 5864 --- [main] c.g.book_network.BookNetworkApplication  : The following 1 profile is active: "dev"
+2024-09-08T21:10:06.638+05:00  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-08T21:10:06.757+05:00  INFO 5864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 4 JPA repository interfaces.
+2024-09-08T21:10:07.974+05:00  INFO 5864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2024-09-08T21:10:08.000+05:00  INFO 5864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-08T21:10:08.001+05:00  INFO 5864 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-08T21:10:08.133+05:00  INFO 5864 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2024-09-08T21:10:08.134+05:00  INFO 5864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2630 ms
+2024-09-08T21:10:08.361+05:00  INFO 5864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-08T21:10:08.478+05:00  INFO 5864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-08T21:10:08.545+05:00  INFO 5864 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-08T21:10:09.092+05:00  INFO 5864 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-08T21:10:09.141+05:00  INFO 5864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-08T21:10:09.348+05:00  INFO 5864 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a90fcaa
+2024-09-08T21:10:09.352+05:00  INFO 5864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-08T21:10:09.417+05:00  WARN 5864 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-08T21:10:11.353+05:00  INFO 5864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-08T21:10:11.562+05:00  INFO 5864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-08T21:10:12.177+05:00 DEBUG 5864 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-09-08T21:10:12.178+05:00 DEBUG 5864 --- [main] c.g.book_network.security.JwtFilter      : Filter 'jwtFilter' configured for use
+2024-09-08T21:10:12.308+05:00  INFO 5864 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-08T21:10:12.310+05:00  WARN 5864 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-08T21:10:12.539+05:00  WARN 5864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-08T21:10:12.790+05:00 DEBUG 5864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-09-08T21:10:12.992+05:00 DEBUG 5864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-08T21:10:13.269+05:00 DEBUG 5864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-08T21:10:13.354+05:00 DEBUG 5864 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-08T21:10:13.487+05:00  INFO 5864 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-08T21:10:14.274+05:00  INFO 5864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/api/v1'
+2024-09-08T21:10:14.290+05:00  INFO 5864 --- [main] c.g.book_network.BookNetworkApplication  : Started BookNetworkApplication in 9.728 seconds (process running for 10.365)
+2024-09-08T21:10:19.818+05:00  INFO 5864 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-08T21:10:19.818+05:00  INFO 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-08T21:10:19.819+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-09-08T21:10:19.819+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-09-08T21:10:19.820+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-09-08T21:10:19.821+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5b6637f3
+2024-09-08T21:10:19.822+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@25131637
+2024-09-08T21:10:19.823+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-08T21:10:19.824+05:00  INFO 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-09-08T21:10:19.878+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui", parameters={}
+2024-09-08T21:10:19.884+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:10:19.906+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:10:19.915+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:10:20.196+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:10:20.202+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@621a9d6e]
+2024-09-08T21:10:20.230+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.]
+2024-09-08T21:10:20.233+05:00 DEBUG 5864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:10:48.213+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui.html", parameters={}
+2024-09-08T21:10:48.216+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:10:48.221+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:10:48.221+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:10:48.239+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:10:48.239+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@47c1a402]
+2024-09-08T21:10:48.243+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-09-08T21:10:48.243+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:10:56.301+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui.html", parameters={}
+2024-09-08T21:10:56.304+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:10:56.308+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:10:56.309+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:10:56.486+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:10:56.487+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@6ead7af8]
+2024-09-08T21:10:56.489+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-09-08T21:10:56.490+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:10:58.794+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui.html", parameters={}
+2024-09-08T21:10:58.797+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:10:58.799+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:10:58.799+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:10:58.813+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:10:58.815+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@2cacadd5]
+2024-09-08T21:10:58.817+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.html.]
+2024-09-08T21:10:58.818+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:13:16.698+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:13:16.702+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:13:16.706+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:13:16.707+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:13:16.730+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:13:16.731+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@258c2633]
+2024-09-08T21:13:16.733+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:13:16.734+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:14:20.379+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:14:20.382+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:14:20.385+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:14:20.386+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:14:20.396+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:14:20.397+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@5da4e05f]
+2024-09-08T21:14:20.399+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:14:20.399+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:14:24.761+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:14:24.762+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:14:24.764+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:14:24.765+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:14:24.776+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:14:24.776+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@650429a5]
+2024-09-08T21:14:24.778+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:14:24.778+05:00 DEBUG 5864 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:14:27.899+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:14:27.901+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:14:27.905+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:14:27.905+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:14:27.914+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:14:27.918+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@27ee5b4d]
+2024-09-08T21:14:27.919+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:14:27.920+05:00 DEBUG 5864 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:14:28.325+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:14:28.327+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:14:28.329+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:14:28.330+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:14:28.358+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:14:28.359+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@74f121ae]
+2024-09-08T21:14:28.360+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:14:28.361+05:00 DEBUG 5864 --- [http-nio-8088-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:14:28.406+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:14:28.407+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:14:28.408+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:14:28.409+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:14:28.421+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:14:28.422+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@3f971dff]
+2024-09-08T21:14:28.423+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:14:28.424+05:00 DEBUG 5864 --- [http-nio-8088-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:14:28.723+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:14:28.724+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:14:28.726+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:14:28.727+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:14:28.736+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:14:28.736+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@6d91a7ee]
+2024-09-08T21:14:28.737+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:14:28.738+05:00 DEBUG 5864 --- [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:14:36.533+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/swagger-ui/index.html", parameters={}
+2024-09-08T21:14:36.535+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:14:36.539+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:14:36.540+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:14:36.582+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:14:36.583+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@45a3d97c]
+2024-09-08T21:14:36.585+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html.]
+2024-09-08T21:14:36.586+05:00 DEBUG 5864 --- [http-nio-8088-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:15:43.068+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/v3/api-docs", parameters={}
+2024-09-08T21:15:43.070+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-08T21:15:43.074+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-09-08T21:15:43.075+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.getlivreru.book_network.handler.GlobalExceptionHandler#handleException(Exception)
+2024-09-08T21:15:43.091+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-09-08T21:15:43.092+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.getlivreru.book_network.handler.ExceptionResponse@3d8b1f10]
+2024-09-08T21:15:43.093+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource v3/api-docs.]
+2024-09-08T21:15:43.094+05:00 DEBUG 5864 --- [http-nio-8088-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-09-08T21:17:17.177+05:00  INFO 5864 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-08T21:17:17.181+05:00  INFO 5864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-08T21:17:17.187+05:00  INFO 5864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
