@@ -20,7 +20,7 @@ import {CodeInputModule} from 'angular-code-input';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    CodeInputModule
+    CodeInputModule,
   ],
   providers: [
     HttpClient,
