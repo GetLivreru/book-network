@@ -24,7 +24,18 @@ export class LoginComponent {
   }
 
   login() {
+    this.errorMsg = [];
+    this.authService.authenticate({
+      body: this.authRequest
+    }).subscribe({
+      next:(res)=>{
 
+        this.router.navigate(['books']);
+      },
+      error :(err)=>{
+        console.log(err);
+      }
+    })
   }
   register(){
   this.router.navigate(['register'])
