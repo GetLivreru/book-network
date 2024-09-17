@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AuthenticationRequest} from "../../services/models/authentication-request";
 import { Router } from "@angular/router";
 import {AuthenticationService} from "../../services/services/authentication.service";
-import {KeycloakService} from "../../services/services/keycloack/keycloack.service";
+import {KeycloakService} from "../../services/keycloak/keycloak.service";
 import {TokenService} from "../../services/token/token.service";
 
 @Component({
