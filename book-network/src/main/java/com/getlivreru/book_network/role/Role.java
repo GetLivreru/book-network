@@ -18,8 +18,9 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@EntityListeners(AuditingEntityListener.class)
+// @Entity
+// @Table(name = "role")
+// @EntityListeners(AuditingEntityListener.class)
 public class Role {
 
     @Id
@@ -27,14 +28,14 @@ public class Role {
     private Integer id;
     @Column(unique = true)
     private String name;
-
     @ManyToMany(mappedBy = "roles")
     @JsonIgnore
-    private List<User> users;
+    private List<User> user;
 
     @CreatedDate
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdDate;
+
     @LastModifiedDate
     @Column(insertable = false)
     private LocalDateTime lastModifiedDate;

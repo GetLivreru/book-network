@@ -3,10 +3,7 @@ package com.getlivreru.book_network.book;
 import com.getlivreru.book_network.common.BaseEntity;
 import com.getlivreru.book_network.feedback.Feedback;
 import com.getlivreru.book_network.history.BookTransactionHistory;
-import com.getlivreru.book_network.user.User;
 import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
@@ -17,6 +14,7 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
+
 @Getter
 @Setter
 @SuperBuilder
@@ -25,7 +23,6 @@ import java.util.List;
 @Entity
 public class Book extends BaseEntity {
 
-    private Integer id;
     private String title;
     private String authorName;
     private String isbn;
@@ -33,9 +30,9 @@ public class Book extends BaseEntity {
     private String bookCover;
     private boolean archived;
     private boolean shareable;
-    @ManyToOne
-    @JoinColumn(name = "owner_id")
-    private User owner;
+    // @ManyToOne
+    // @JoinColumn(name = "owner_id")
+    // private User owner;
     @OneToMany(mappedBy = "book")
     private List<Feedback> feedbacks;
     @OneToMany(mappedBy = "book")
