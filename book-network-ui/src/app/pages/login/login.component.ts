@@ -36,6 +36,7 @@ export class LoginComponent implements OnInit{
       next: (res) => {
         this.tokenService.token = res.token as string;
         this.router.navigate(['books']);
+
       },
       error: (err) => {
         console.log(err);
