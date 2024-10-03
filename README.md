@@ -73,11 +73,6 @@ By following this project, students will learn:
 - Documenting APIs using OpenAPI and Swagger UI
 - Implementing business requirements and handling business exceptions
 - Dockerizing the infrastructure
-- CI/CD pipeline & deployment
-
-## License
-
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
 
 ## Getting Started
 
